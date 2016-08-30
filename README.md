@@ -537,7 +537,17 @@ cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 http://stackoverflow.com/questions/7886096/unbalanced-calls-to-begin-end-appearance-transitions-for-uitabbarcontroller-0x   - Unbalanced calls to begin/end appearance transitions for <UITabBarController: 0x197870>
 
 
+You also need to set the facebookpermissions property for the PFLoginViewController. Simply add the following line:
 
+loginViewController.facebookPermissions = @[ @"user_about_me"];
+
+in the presentLoginViewControllerAnimated method.
+
+
+
+[self.window.rootViewController dismissViewControllerAnimated:YEScompletion:nil];
+
+in didloginuser method
 
 
 
