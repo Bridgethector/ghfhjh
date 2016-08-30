@@ -602,6 +602,14 @@ Thanks,
 
 
 
+- (NSIndexPath *)_indexPathForPaginationCell {
+
+return [NSIndexPath indexPathForRow:0 inSection:self.objects.count];
+
+}
+
+
+
 // 
 
 
