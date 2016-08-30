@@ -580,7 +580,29 @@ https://github.com/drshoe/UberCam
 
 
 
+//  hmvc //
 
+
+
+There is a bug in the PFQueryTableViewController in the new version of the SDK. The workaround is to add
+
+- (NSIndexPath *)_indexPathForPaginationCell {
+
+return [NSIndexPath indexPathForRow:0 inSection:[self.objects count]];
+
+}
+
+in the HomeViewController.m.
+
+Here is a stackoverflow link that explains this issue: stackoverflow PFQueryTableViewController error
+
+I've also updated the completed project file for this course to be compatible with the newest Parse SDK 1.7.5 and facebook SDK 4.4. Please go to this link (github complete project file) and download the source code so you could compare your code with it.
+
+Thanks,
+
+
+
+// 
 
 
 
