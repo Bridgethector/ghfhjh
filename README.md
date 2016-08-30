@@ -551,6 +551,15 @@ in didloginuser method
 
 
 
+View Will Appear Photo   /// 
+
+
+
+http://stackoverflow.com/questions/26306635/ios-xcode-issue-with-cameraviewcontroller-when-i-click-on-a-photo-to-choose-it  
+
+
+
+
 
 
 
