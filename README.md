@@ -559,6 +559,16 @@ http://stackoverflow.com/questions/26306635/ios-xcode-issue-with-cameraviewcontr
 
 
 
+1. you need to add an property of type BOOL called imagePickerIsDisplayed.
+
+2. in viewwillappear method, only present the view controller when !self.imagePickerIsDisplayed
+
+3. in imagePickerController:didFinishPickingMediaWithInfo and imagePickerControllerDidCancel methods, set imagePikcerIsDisplayed back to NO.
+
+Thank you,
+
+
+
 
 
 
@@ -566,6 +576,9 @@ http://stackoverflow.com/questions/26306635/ios-xcode-issue-with-cameraviewcontr
 
 
 https://github.com/drshoe/UberCam
+
+
+
 
 
 
